@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{F5D6EC24-874E-42C3-BA4E-7489CF69A705}"
+	ProjectSection(SolutionItems) = preProject
+		build.cmd = build.cmd
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiningRigRentalsApi", "MiningRigRentalsApi\MiningRigRentalsApi.csproj", "{C3F0AC3D-A865-48AB-A733-A88B5E567940}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3F0AC3D-A865-48AB-A733-A88B5E567940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F0AC3D-A865-48AB-A733-A88B5E567940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F0AC3D-A865-48AB-A733-A88B5E567940}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C3F0AC3D-A865-48AB-A733-A88B5E567940}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C3F0AC3D-A865-48AB-A733-A88B5E567940}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C3F0AC3D-A865-48AB-A733-A88B5E567940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F0AC3D-A865-48AB-A733-A88B5E567940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F0AC3D-A865-48AB-A733-A88B5E567940}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C3F0AC3D-A865-48AB-A733-A88B5E567940}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C3F0AC3D-A865-48AB-A733-A88B5E567940}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
