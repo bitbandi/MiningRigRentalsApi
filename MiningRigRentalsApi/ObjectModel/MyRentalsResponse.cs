@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using MiningRigRentalsApi.Converters;
+using Newtonsoft.Json;
 
 namespace MiningRigRentalsApi.ObjectModel
 {
@@ -17,8 +19,9 @@ namespace MiningRigRentalsApi.ObjectModel
 		public string type;
 		public int online;
 		public double price;
-		//        [JsonConverter(typeof(IsoDateTimeConverter))]
-		//        public DateTime start_time;
+		[JsonProperty("start_time")]
+		[JsonConverter(typeof(PhpDateTimeConverter))]
+		public DateTime starttime;
 		public string status;
 		public double vailable_in_hours;
 	}

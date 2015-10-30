@@ -103,6 +103,9 @@ namespace MiningRigRentalsApi
 			if (resp.ErrorException != null)
 				throw resp.ErrorException;
 
+			if (!resp.Data.Success)
+				throw new Exception(resp.Data.Errors[0]);
+
 			return resp.Data.Data;
 		}
 
@@ -129,6 +132,9 @@ namespace MiningRigRentalsApi
 			if (resp.ErrorException != null)
 				throw resp.ErrorException;
 
+			if (!resp.Data.Success)
+				throw new Exception(resp.Data.Errors[0]);
+
 			return resp.Data.Data;
 		}
 
@@ -143,8 +149,12 @@ namespace MiningRigRentalsApi
 			if (resp.ErrorException != null)
 				throw resp.ErrorException;
 
+			if (!resp.Data.Success)
+				throw new Exception(resp.Data.Errors[0]);
+
 			return resp.Data.Data;
 		}
+
 		public string UpdateRig(RigData data)
 		{
 			var client = CreateClient();
@@ -173,6 +183,9 @@ namespace MiningRigRentalsApi
 			if (resp.ErrorException != null)
 				throw resp.ErrorException;
 
+			if (!resp.Data.Success)
+				throw new Exception(resp.Data.Errors[0]);
+
 			return resp.Data.Data;
 		}
 
@@ -198,6 +211,9 @@ namespace MiningRigRentalsApi
 
 			if (resp.ErrorException != null)
 				throw resp.ErrorException;
+
+			if (!resp.Data.Success)
+				throw new Exception(resp.Data.Errors[0]);
 
 			return resp.Data.Data;
 		}
