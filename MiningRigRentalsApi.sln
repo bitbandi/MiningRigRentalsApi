@@ -8,6 +8,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{F5D6EC24-8
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{02BA6842-EE69-4604-ACC5-9FACA52925F9}"
+	ProjectSection(SolutionItems) = preProject
+		Build.NuGet\NuGet-Package.bat = Build.NuGet\NuGet-Package.bat
+		Build.NuGet\NuGet-Push.bat = Build.NuGet\NuGet-Push.bat
+		Build.NuGet\NuGet-Settings.cmd = Build.NuGet\NuGet-Settings.cmd
+		Build.NuGet\NuGet.exe = Build.NuGet\NuGet.exe
+		Build.NuGet\NuGet.targets = Build.NuGet\NuGet.targets
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiningRigRentalsApi", "MiningRigRentalsApi\MiningRigRentalsApi.csproj", "{C3F0AC3D-A865-48AB-A733-A88B5E567940}"
 EndProject
 Global

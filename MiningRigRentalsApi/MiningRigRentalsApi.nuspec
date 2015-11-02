@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>MiningRigRentalsApi</id>
+    <version>$version$</version>
+    <description>library to use www.miningrigrentals.com over api</description>
+    <authors>elbandi</authors>
+    <projectUrl>https://github.com/bitbandi/MiningRigRentalsApi/</projectUrl>
+    <licenseUrl>https://raw.githubusercontent.com/bitbandi/MiningRigRentalsApi/master/LICENSE</licenseUrl>
+    <tags>library miningrigrentals api</tags>
+  </metadata>
+  <files>
+   <file src="bin\nuget\net35\$id$.*" target="lib\net35\" />
+   <file src="bin\nuget\net40\$id$.*" target="lib\net40\" exclude="$id$.dll" />
+   <file src="bin\nuget\net45\$id$.*" target="lib\net45\" />
+  </files>
+</package>
