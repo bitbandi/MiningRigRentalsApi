@@ -24,5 +24,32 @@ namespace MiningRigRentalsApi.ObjectModel
 		public DateTime starttime;
 		public string status;
 		public double vailable_in_hours;
+		public MyRentalsHashrateAdvertised advertised;
+		public MyRentalsHashrateCurrent current;
+		public MyRentalsHashrateAverage average;
 	}
+
+	public class MyRentalsHashrateAdvertised
+	{
+		public string hashrate_nice;
+		public ulong hashrate;
+	}
+
+	public class  MyRentalsHashrateCurrent
+	{
+		public double hash_5m;
+		public string hash_5m_nice;
+		public double hash_30m;
+		public string hash_30m_nice;
+		public double hash_1h;
+		public string hash_1h_nice;
+	}
+
+	public class MyRentalsHashrateAverage
+	{
+		public double hashrate;
+		public string hashrate_nice;
+		public double percent;
+	}
+
 }
