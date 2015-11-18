@@ -23,7 +23,7 @@ namespace MiningRigRentalsApi.ObjectModel
 		[JsonConverter(typeof(PhpDateTimeConverter))]
 		public DateTime starttime;
 		public string status;
-		public double vailable_in_hours;
+		public double available_in_hours;
 		public MyRentalsHashrateAdvertised advertised;
 		public MyRentalsHashrateCurrent current;
 		public MyRentalsHashrateAverage average;
