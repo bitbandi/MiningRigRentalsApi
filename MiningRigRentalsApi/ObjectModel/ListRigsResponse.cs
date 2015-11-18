@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
+using Newtonsoft.Json.Serialization;
 
 namespace MiningRigRentalsApi.ObjectModel
 {
@@ -42,6 +44,16 @@ namespace MiningRigRentalsApi.ObjectModel
 		public string status;
 		public string hashrate_nice;
 		public ulong hashrate;
-		public string rpi;
+		public double rpi;
+
+		[OnError]
+		internal void HandleError(StreamingContext context, ErrorContext errorContext)
+		{
+			if (errorContext.Member.Equals("rpi"))
+			{
+				(errorContext.OriginalObject as RigListRecords).rpi = double.NaN;
+				errorContext.Handled = true;
+			}
+		}
 	}
 }
