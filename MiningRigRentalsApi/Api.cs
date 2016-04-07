@@ -119,6 +119,9 @@ namespace MiningRigRentalsApi
 			if (resp.ErrorException != null)
 				throw resp.ErrorException;
 
+			if (!resp.Data.Success)
+				throw new Exception(resp.Data.Errors[0]);
+
 			return resp.Data.Data;
 		}
 
