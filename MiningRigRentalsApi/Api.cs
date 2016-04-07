@@ -141,7 +141,24 @@ namespace MiningRigRentalsApi
 			return resp.Data.Data;
 		}
 
-		public RentalDetails GetRentalDetails(int id)
+		public RigDetails GetRigDetails(uint id)
+		{
+			var client = CreateClient();
+
+			var req = CreateRequest("rigs", "detail")
+						.AddParameter("id", id);
+			var resp = client.Execute<MiningRigRentalsResponse<RigDetails>>(req);
+
+			if (resp.ErrorException != null)
+				throw resp.ErrorException;
+
+			if (!resp.Data.Success)
+				throw new Exception(resp.Data.Errors[0]);
+
+			return resp.Data.Data;
+		}
+
+		public RentalDetails GetRentalDetails(uint id)
 		{
 			var client = CreateClient();
 

@@ -136,6 +136,7 @@
     <Compile Include="ObjectModel\ProfileResponse.cs" />
     <Compile Include="ObjectModel\RentalDetailsResponse.cs" />
     <Compile Include="ObjectModel\RigData.cs" />
+    <Compile Include="ObjectModel\RigDetailsResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Serialization\JsonNetDeseralizer.cs" />
     <Compile Include="Serialization\JsonNetSerializer.cs" />
